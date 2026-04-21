@@ -191,7 +191,7 @@ const browserArticleContent = (
         <div className="flex justify-center my-6">
             <BrowserIcon className="w-24 h-24 text-neon-blue" />
         </div>
-        <p>Di mana JavaScript masuk? Browser memiliki komponen khusus yang disebut <strong>JavaScript Engine</strong> (misalnya, V8 di Chrome). Ketika browser menemukan tag `<script>`, ia akan menghentikan parsing HTML sejenak dan menyerahkan tugas kepada engine ini. JavaScript dapat secara dinamis mengubah DOM dan CSSOM (misalnya, menambahkan elemen baru saat tombol diklik), yang seringkali akan memicu proses Layout dan Painting ulang untuk memperbarui tampilan halaman.</p>
+        <p>Di mana JavaScript masuk? Browser memiliki komponen khusus yang disebut <strong>JavaScript Engine</strong> (misalnya, V8 di Chrome). Ketika browser menemukan tag &lt;script&gt;, ia akan menghentikan parsing HTML sejenak dan menyerahkan tugas kepada engine ini. JavaScript dapat secara dinamis mengubah DOM dan CSSOM (misalnya, menambahkan elemen baru saat tombol diklik), yang seringkali akan memicu proses Layout dan Painting ulang untuk memperbarui tampilan halaman.</p>
         
         <div className="p-8 bg-neon-blue/10 dark:bg-neon-blue/20 rounded-3xl border border-neon-blue/30 text-center">
             <h3 className="font-poppins text-2xl font-bold text-dark-navy dark:text-clean-white mb-3">Kesimpulan</h3>
