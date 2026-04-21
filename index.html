@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dunia Programmer - Bagaimana Cara Kerja Website?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'dark-navy': '#0F172A',
+              'neon-blue': '#38BDF8',
+              'clean-white': '#F8FAFC',
+            },
+            borderRadius: {
+              '4xl': '2rem',
+            },
+            boxShadow: {
+              'glow-blue': '0 0 15px rgba(56, 189, 248, 0.4), 0 0 25px rgba(56, 189, 248, 0.2)',
+              'glow-blue-hover': '0 0 25px rgba(56, 189, 248, 0.7), 0 0 40px rgba(56, 189, 248, 0.3)',
+              'soft': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)',
+            },
+            typography: (theme) => ({
+              DEFAULT: {
+                css: {
+                  '--tw-prose-body': theme('colors.slate[700]'),
+                  '--tw-prose-headings': theme('colors.dark-navy'),
+                  '--tw-prose-links': theme('colors.neon-blue'),
+                  '--tw-prose-bold': theme('colors.slate[800]'),
+                  '--tw-prose-counters': theme('colors.slate[500]'),
+                  '--tw-prose-bullets': theme('colors.slate[400]'),
+                  '--tw-prose-hr': theme('colors.slate[200]'),
+                  '--tw-prose-quotes': theme('colors.slate[800]'),
+                  '--tw-prose-quote-borders': theme('colors.neon-blue'),
+                  '--tw-prose-invert-body': theme('colors.slate[300]'),
+                  '--tw-prose-invert-headings': theme('colors.clean-white'),
+                  '--tw-prose-invert-links': theme('colors.neon-blue'),
+                  '--tw-prose-invert-bold': theme('colors.white'),
+                  '--tw-prose-invert-counters': theme('colors.slate[400]'),
+                  '--tw-prose-invert-bullets': theme('colors.slate[500]'),
+                  '--tw-prose-invert-hr': theme('colors.slate[700]'),
+                  '--tw-prose-invert-quotes': theme('colors.slate[100]'),
+                  '--tw-prose-invert-quote-borders': theme('colors.neon-blue'),
+                  p: {
+                    lineHeight: '1.8',
+                    'font-weight': '400',
+                  },
+                  'ul, ol': {
+                    lineHeight: '1.8',
+                  },
+                },
+              },
+            }),
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-in-out;
+      }
+      @keyframes shimmer {
+        0% { background-position: -1000px 0; }
+        100% { background-position: 1000px 0; }
+      }
+      .animate-shimmer {
+        animation: shimmer 2s infinite linear;
+        background: linear-gradient(to right,
+          theme('colors.slate.200') 4%,
+          theme('colors.slate.300') 25%,
+          theme('colors.slate.200') 36%);
+        background-size: 1000px 100%;
+      }
+      .dark .animate-shimmer {
+         background: linear-gradient(to right,
+          theme('colors.slate.700') 4%,
+          theme('colors.slate.600') 25%,
+          theme('colors.slate.700') 36%);
+        background-size: 1000px 100%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
